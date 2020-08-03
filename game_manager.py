@@ -137,7 +137,7 @@ class GameManager:
 
     def check_if_empty(self, position: tuple, party: int, return_piece=False):
         '''
-        used in piece objects if they need a special check if a position is empty
+        used in piece objects if they need a special check if a position is empty 
         '''
         party = game_state.red_party if party is 1 else game_state.white_party
         for piece in party.pieces:
