@@ -5,7 +5,7 @@ this file handles the game
 from display import Display
 from game_manager import GameManager
 from game_state import game_state
-# global game state for modifying it and getting values out of it
+# global game state for modifying it and getting values out of it 
 
 def main():
     display = Display()
