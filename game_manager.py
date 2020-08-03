@@ -6,6 +6,8 @@ from functools import partial
 from display import Display
 from game_state import game_state
 from pieces import Piece
+from curses import *
+from curses.textpad import Textbox
 
 display = Display()
     
@@ -57,9 +59,16 @@ class GameManager:
 
 
     def request_action(self): 
+        editwin = newwin(1, 15, 20, 0)
+        # stdscr.addstr('\n')
+        box = Textbox(editwin)
+        noecho()
+        
         actioned = False
         while not actioned: 
-            _input = input('white: ') if game_state.its_whites_turn else input('red: ')
+            box.edit()
+            _input = box.gather()
+            # _input = getstr('white: ') if game_state.its_whites_turn else input('red: ')
             action = self.validate_input(_input)
             actioned = True if action else False
         return action

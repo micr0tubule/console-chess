@@ -7,7 +7,6 @@ from game_manager import GameManager
 from game_state import game_state
 # global game state for modifying it and getting values out of it
 
-
 def main():
     display = Display()
     game_manager = GameManager()
