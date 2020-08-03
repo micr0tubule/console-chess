@@ -1,0 +1,9 @@
+winvenv
+venv
+.vscode 
+__pycache__
+chess.bat
+chess.bat~
+chcp
+.chess.bat.un~
+.gitignore
