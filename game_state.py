@@ -1,7 +1,4 @@
-""" 
-this class is responsible for storing all the information about the current state of the chess game. 
-It will also be repsonsiblefor determining the valid moves at the current state.
-""" 
+
 import numpy
 from party import Party
 
